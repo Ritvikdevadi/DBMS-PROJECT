@@ -18,7 +18,10 @@
 }
 
 .login-box {
- 
+
+
+    margin-top: 75px;
+    height: auto;
     margin-top: 60px;
     height: 600px;
     background: #1A2226;
@@ -46,6 +49,7 @@
 }
 
 .login-form {
+    
   margin: center;
     margin-top: 25px;
     text-align: center;
@@ -65,7 +69,7 @@ input[type=text] {
 }
 
 input[type=password] {
-    background-color: #1A2226;
+    background-color: #44b7f0;
     border: none;
     border-bottom: 2px solid #0DB8DE;
     border-top: 0px;
@@ -142,9 +146,26 @@ label {
 
 .loginbttm {
     padding: 0px;
-}</style>
+}
+#dropdown {
+  width: 40%; /* Set the width of the dropdown */
+  background-color: #f1f1f1; /* Set the background color */
+  color: rgb(29, 108, 212); /* Set the text color */
+  padding: 20px; /* Set the padding */
+  border: none; /* Remove the border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#dropdown:hover {
+  background-color: #ddd; /* Add a hover effect */
+}
+
+#dropdown option {
+  background-color: white; /* Set the background color of the options */
+}
+</style>
 <body>
-   
+
     <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-2"></div>
@@ -156,7 +177,7 @@ label {
                 <div><img src="rit logot.png" class="ritlogo"alt=""></div> 
               ATTENDENCE LOGIN
             </div>
-      
+
             <div class="col-lg-12 login-form">
               <div class="col-lg-12 login-form">
                 <form>
@@ -164,11 +185,17 @@ label {
                     <label class="form-control-label">USN</label>
                     <input type="text" class="form-control">
                   </div>
+            
                   <div class="form -group">
-                    <label class="form-control-label">LABS</label>
-                    <input type="password" class="form-control" i>
+                    <label for="dropdown">Select your LAB:</label>
+                    <select id="dropdown">
+                    <option value="OOPs LAB">OOPs LAB</option>
+                    <option value="DS LAB">DS LAB</option>
+                    <option value="DBMS LAB">DBMS LAB</option>
+                   </select>
                   </div>
-      
+                  
+
                   <div class="col-lg-12 loginbttm">
                     <div class="col-lg-6 login-btm login-text">
                       <!-- Error Message -->
